@@ -1,12 +1,17 @@
-<template>
-  <div>
-    {{ fo }}
+<template lang="html">
+  <div class="">
+    <SomeComponent>
+      <template #header>
+        <div class="">Hello</div>
+      </template>
+      <template #footer>
+  <div class="">Hello</div>
+</template>
+    </SomeComponent>
   </div>
 </template>
 
 <script>
-import * as _ from 'lodash'
-
 export default {
   props: ['foo', 'bar']
 }
